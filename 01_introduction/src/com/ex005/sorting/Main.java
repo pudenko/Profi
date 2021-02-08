@@ -4,25 +4,6 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-class dfgfdg implements Comparable {
-    int maxAge;
-    String nickname;
-    int size;
-
-    public dfgfdg(int maxAge, String nickname, int size) {
-        this.maxAge = maxAge;
-        this.nickname = nickname;
-        this.size = size;
-    }
-
-    @Override
-    public int compareTo(Object o) {
-        if (this.size != o.si)
-
-
-            return 0; //вот тут нужно заебенить реализацию сортировка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    }
-}
 
 class Bird implements Comparable {
     int maxAge;
@@ -49,18 +30,13 @@ class Bird implements Comparable {
                 return i; //если не 0, а + или - то вернуть разницу чисен, код сам поймёт.
             } else {
                 i = this.nickname.compareTo(((Bird) o).nickname);
-
-
-
-
-
+                return i;
             }
         }
-
-
-        return 0; //вот тут нужно заебенить реализацию сортировка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//        return 0; //вот тут нужно заебенить реализацию сортировка!!!!!!!!!??!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
 }
+
 
 class Animal implements Comparable {
     String breed;
