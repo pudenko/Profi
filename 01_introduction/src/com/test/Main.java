@@ -1,45 +1,41 @@
 package com.test;
 
-class TT{
+class Tratata {
+    String name;
 
+    public Tratata(String name) {
+        this.name = name;
+    }
 }
 
 public class Main {
-    public static boolean or35 (int n) {
-        if(n > 0){
-
-            if(n%3 > 0 && 0 < n%6){
-                return false;
-            }
-
-            else {
-                return true;
-            }
-
-        }
-        else{
-            return false;
-        }
-
-    }
     public static void main(String[] args) {
-//        SString.missingChar("asd",4);
-        System.out.println(or35(2));
+        int x = 2;
+        int y = 5;
+        test(x, y);
+
+        Tratata x1 = new Tratata("xiii");
+
+        Tratata x2 = new Tratata("xaaa");
+        test1(x1, x2);
+
+        Object x3 = x1;
+        test2(x1, x2);
+    }
 
 
+    public static void test(int a, int b) {
+        System.out.println(a);
+        System.out.println(b);
+    }
 
-//        SString o1 = new SString("Objeckt1");
-//        SString o2 = new SString("Objeckt2");
-//
-//        Object o3 = o2;
-//
-//
-//
-//        o1.myMethod(o2);
-//        System.out.println("!!!!!!!");
-//        o2.myMethod(o1);
-
-
-
+    public static void test1(Tratata a, Tratata b) {
+        System.out.println(a.name);
+        System.out.println(b.name);
+    }
+    public static void test2(Object a, Object b) {
+        Tratata gggg = (Tratata)a;
+//        System.out.println(a.name);
+//        System.out.println(b.name);
     }
 }
