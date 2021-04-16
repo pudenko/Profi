@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01_introduction/01_introduction.iml" filepath="$PROJECT_DIR$/01_introduction/01_introduction.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_java_collections/02_java_collections.iml" filepath="$PROJECT_DIR$/02_java_collections/02_java_collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_java_collections/03_java_collections.iml" filepath="$PROJECT_DIR$/03_java_collections/03_java_collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/MQTT/MQTT.iml" filepath="$PROJECT_DIR$/MQTT/MQTT.iml" />
       <module fileurl="file://$PROJECT_DIR$/Profi.iml" filepath="$PROJECT_DIR$/Profi.iml" />
     </modules>

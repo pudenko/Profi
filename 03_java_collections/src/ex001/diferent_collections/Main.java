@@ -1,5 +1,6 @@
 package ex001.diferent_collections;
 
+
 import java.util.*;
 
 public class Main {
