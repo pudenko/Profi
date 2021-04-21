@@ -13,6 +13,7 @@ public class Main {
         Queue<String> far = new LinkedList<>();
         Queue<String> frog = new PriorityQueue<>();
         Deque<String> first = new LinkedList<>();
+        Deque<String> first1 = new ArrayDeque<>();
 
         Set<String> seter = new HashSet<>();
         SortedSet<String> stringer = new TreeSet<>();
