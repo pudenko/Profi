@@ -25,6 +25,10 @@ public class Main {
         System.out.println(ppp);
 
         Set<Map.Entry<Uu, Uu>> sete = ppp.entrySet();
+        for (Map.Entry<Uu, Uu> tmp :sete) {
+            System.out.print(tmp.getKey() + " = ");
+            System.out.println(tmp.getValue());
+        }
 
 
         Iterator<Map.Entry<Uu, Uu>> entries = ppp.entrySet().iterator();
