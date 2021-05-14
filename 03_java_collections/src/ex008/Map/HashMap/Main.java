@@ -4,6 +4,8 @@ package ex008.Map.HashMap;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
+//import java.util.Set;
 
 class Cat {
     byte age;
@@ -23,6 +25,7 @@ class Cat {
 
 class Cat1<K, V> {
 
+    static int cc1;
 
     public Cat1() {
 
@@ -72,7 +75,21 @@ public class Main {
 
         System.out.println(ppp.containsKey(kotiara));
         System.out.println(ppp.containsValue((byte) 6));
-        //Map<Cat,Object> mymap = ppp.entrySet();
+
+        Set<Map.Entry<Cat, Byte>> mymap = ppp.entrySet();
+
+
+        m1();
+        int ttg = m2();
+        String rrr = m3();
+        Cat ttttt = m4();
+        Object iiii = m5();
+
+        Cat1<String, Integer> newObj = new Cat1<>();
+
+        Cat1<String, Integer> jjj = newObj.m6();
+        Cat1.Entryyyy<String,Integer> gg = newObj.m7();
+
 
 
     }
