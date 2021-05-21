@@ -1,9 +1,12 @@
 package ex010.Json;
 
-import java.util.Scanner;
+//import Uur.JsonParser111;
 
+
+import Uur.JsonParser111;
 
 public class Main {
+   static String json1;
     public static void main(String[] args) {
         String json = "{\n" +
                 "  \"firstName\": \"John\",\n" +
@@ -16,6 +19,8 @@ public class Main {
 //        System.out.println(userName);
 //        System.out.println(json);
 
+        JsonParser111.jsonPars(json);
+//        JsonParser111.jsonPars(json1);
 
     }
 
