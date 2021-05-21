@@ -23,6 +23,9 @@ class Cat {
     }
 }
 
+class Human {
+}
+
 class Cat1<K, V> {
 
     static int cc1;
@@ -61,7 +64,7 @@ public class Main {
         ppp.put(new Cat((byte) 3, "bato"), (byte) 6);
         ppp.put(new Cat((byte) 4, "aatro"), (byte) 66);
 
-        System.out.println(ppp);
+//        System.out.println(ppp);
 
         LinkedHashMap<Cat, Byte> yyy = new LinkedHashMap<>();
 
@@ -71,12 +74,30 @@ public class Main {
         yyy.put(new Cat((byte) 3, "bato"), (byte) 6);
         yyy.put(new Cat((byte) 4, "aatro"), (byte) 66);
 
-        System.out.println(yyy);
+//        System.out.println(yyy);
 
-        System.out.println(ppp.containsKey(kotiara));
-        System.out.println(ppp.containsValue((byte) 6));
+//        System.out.println(ppp.containsKey(kotiara));
+//        System.out.println(ppp.containsValue((byte) 6));
 
         Set<Map.Entry<Cat, Byte>> mymap = ppp.entrySet();
+
+        Human mmm = new Human();
+
+        System.out.println(ppp);
+        ppp.remove(kotiara);
+//        System.out.println(ppp);
+        System.out.println(ppp.remove(kotiara) != null ? "ok" : "No");
+        Byte test = ppp.remove(kotiara);
+//        if (test != null) {
+//            System.out.println("YES");
+//        } else {
+//            if (test != null) {
+////            System.out.println("YES");
+//        } else {
+//            System.out.println("NO");
+//        }
+//            System.out.println("NO");
+//        }
 
 
         m1();
@@ -88,8 +109,7 @@ public class Main {
         Cat1<String, Integer> newObj = new Cat1<>();
 
         Cat1<String, Integer> jjj = newObj.m6();
-        Cat1.Entryyyy<String,Integer> gg = newObj.m7();
-
+        Cat1.Entryyyy<String, Integer> gg = newObj.m7();
 
 
     }
